@@ -15,7 +15,11 @@ Real Time Chat Applications using raw websockets in Bun that supports the follow
     - Upvoting 
     - Most upvoted comments/QA should read the admin.
 
-
+- UI:
+    - tailwind component:
+        - 3 parts -> a chat button and has a upvote and downvote button
+        - another section >=3 upvotes
+        - another section where >= 10 upvotes and highlight the message to the client.
 
 
 ## Install:
