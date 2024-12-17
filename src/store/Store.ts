@@ -2,23 +2,26 @@
 // we can create a same shape for this with the given functionality
 
 export abstract class Store {
- 
   constructor() {}
 
   initRoom(roomId: string) {}
 
-  getChats(room: string, limit: number, offset: number) {}
+  getChats(roomId: string, limit: number, offset: number) {}
 
-  addChat(room: string, limit: number, offset: number) {}
-  upvote(room: string, chatId: string) {}
+  addChat(
+    userId: UserId,
+    roomId: string,
+    name: string,
+    message: string
+  ){}
+  upvote(userId: UserId, roomId: string, chatId: string) {}
 }
 
-type UserId = string;
+export type UserId = string;
 export interface Chat {
   //shape of our chat obj
   userId: UserId;
   name: string;
   message: string;
-  upvotes: UserId[]; // who has upvoted what 
+  upvotes: UserId[]; // who has upvoted what
 }
-
