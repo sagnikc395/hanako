@@ -2,9 +2,10 @@
 // we can create a same shape for this with the given functionality
 
 export abstract class Store {
+ 
   constructor() {}
 
-  initRoom() {}
+  initRoom(roomId: string) {}
 
   getChats(room: string, limit: number, offset: number) {}
 
@@ -13,10 +14,11 @@ export abstract class Store {
 }
 
 type UserId = string;
-interface Chat {
+export interface Chat {
   //shape of our chat obj
   userId: UserId;
   name: string;
   message: string;
   upvotes: UserId[]; // who has upvoted what 
 }
+
