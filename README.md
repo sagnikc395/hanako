@@ -11,6 +11,11 @@ Real Time Chat Applications using raw websockets in Bun that supports the follow
     - allow users to upvote chat messages.
     - if chat messages reach more than 3 upvotes, move them over to a seperate section.
     - if cha messages reach mre than 10 upvotes, alert the admin to answer.
+    - People are rate limited.
+    - Upvoting 
+    - Most upvoted comments/QA should read the admin.
+
+
 
 
 ## Install:

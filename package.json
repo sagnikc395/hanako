@@ -2,10 +2,17 @@
   "name": "rtc",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "dev":"bun run ./src/index.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/websocket": "^1.0.10"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "websocket": "^1.0.35"
   }
 }
