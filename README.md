@@ -1,28 +1,29 @@
-# rtc
+# hanako
 
 Real Time Chat Applications using raw websockets in Bun that supports the following features:
 
 - Allow an admin to create a new chat session/room. Admin should be allowed to set the following properties on the room:
-    - Name 
-    - start_time 
-    - is_open
-    - cool_down_time 
-    - allow users to join the room and send messages 
-    - allow users to upvote chat messages.
-    - if chat messages reach more than 3 upvotes, move them over to a seperate section.
-    - if cha messages reach mre than 10 upvotes, alert the admin to answer.
-    - People are rate limited.
-    - Upvoting 
-    - Most upvoted comments/QA should read the admin.
+
+  - Name
+  - start_time
+  - is_open
+  - cool_down_time
+  - allow users to join the room and send messages
+  - allow users to upvote chat messages.
+  - if chat messages reach more than 3 upvotes, move them over to a seperate section.
+  - if cha messages reach mre than 10 upvotes, alert the admin to answer.
+  - People are rate limited.
+  - Upvoting
+  - Most upvoted comments/QA should read the admin.
 
 - UI:
-    - tailwind component:
-        - 3 parts -> a chat button and has a upvote and downvote button
-        - another section >=3 upvotes
-        - another section where >= 10 upvotes and highlight the message to the client.
-
+  - tailwind component:
+    - 3 parts -> a chat button and has a upvote and downvote button
+    - another section >=3 upvotes
+    - another section where >= 10 upvotes and highlight the message to the client.
 
 ## Install:
+
 To install dependencies:
 
 ```bash
